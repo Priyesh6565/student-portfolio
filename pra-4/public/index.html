@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div>
+                <h1>Task Manager</h1>
+                <p>Manage your tasks easily</p>
+            </div>
+
+            <div class="api-status">
+                <span class="status-dot"></span>
+                API Online
+            </div>
+        </header>
+
+
+        <!-- Add Task Section -->
+        <section class="add-task-card">
+
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter task title..."
+                    required
+                >
+
+                <select id="completed">
+                    <option value="false">Pending</option>
+                    <option value="true">Completed</option>
+                </select>
+
+                <button type="submit">
+                    + Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="pendingTasks">0</h3>
+                <p>Pending</p>
+            </div>
+
+        </section>
+
+
+        <!-- Tasks -->
+        <section class="tasks-section">
+
+            <div class="section-header">
+                <h2>My Tasks</h2>
+
+                <button id="refreshBtn" class="refresh-btn">
+                    ↻ Refresh
+                </button>
+            </div>
+
+            <div id="taskList" class="task-list">
+
+                <!-- Tasks will appear here -->
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
