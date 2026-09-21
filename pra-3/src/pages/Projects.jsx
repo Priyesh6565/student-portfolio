@@ -8,7 +8,7 @@ function Projects() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("https://api.github.com/users/BHARGAVRATHOD07/repos")
+    fetch("https://api.github.com/users/Priyesh6565/repo")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch GitHub repositories.");
